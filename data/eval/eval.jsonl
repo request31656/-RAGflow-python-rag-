@@ -1,0 +1,5 @@
+{"question": "这个项目用的是什么向量数据库？", "ground_truth": "Qdrant", "contexts": ["向量库选用 Qdrant，负责存储文档 embedding 向量并做相似度检索。"]}
+{"question": "文档解析服务用的是什么？", "ground_truth": "ragflow", "contexts": ["文档解析复用 ragflow 的 DeepDoc 能力（版面分析、表格抽取、公式），通过 HTTP API 调用。"]}
+{"question": "Agent 编排框架是什么？", "ground_truth": "LangGraph", "contexts": ["Agent 编排用 LangGraph，流程为 rewrite → retrieve → grade → self_reflect → generate。"]}
+{"question": "多轮对话历史存在哪里？", "ground_truth": "MySQL", "contexts": ["对话历史持久化到 MySQL 的 Conversation 表，message 字段是 JSON 数组存整段历史。"]}
+{"question": "可观测性用什么？", "ground_truth": "Langfuse", "contexts": ["可观测性用自托管 Langfuse，通过 @observe 装饰器追踪 answer 和 parse_file 等关键调用。"]}
